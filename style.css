@@ -1,0 +1,52 @@
+body{
+    background-image: url("images/space.jpeg");
+    overflow-x: hidden;
+}
+
+section{
+    position: relative;
+}
+
+.planet1{
+    position: absolute;
+    max-width: 45%;
+    animation-name: moveright;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: unset;
+    animation-direction: alternate;
+} 
+.planet2{
+    position: absolute;
+    max-width: 30%;
+    right: 50px;
+    animation-name: moveleft;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: unset;
+    animation-direction: alternate;
+}
+
+@keyframes moveright{
+    0%{
+        left: 0%;
+    }
+    50%{
+        left: 50%;
+    }
+    100%{
+        left: 50%;
+    }
+} 
+
+@keyframes moveleft{
+    0%{
+        right: 0%;
+    }
+    50%{
+        right: 40%;
+    }
+    100%{
+        right: 40%;
+    }
+}
