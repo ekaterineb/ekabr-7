@@ -9,22 +9,27 @@ section{
 
 .planet1{
     position: absolute;
-    max-width: 45%;
+    max-width: 20%;
+    left: 50px;
+    top: 70px;
     animation-name: moveright;
     animation-duration: 10s;
     animation-timing-function: ease;
-    animation-iteration-count: unset;
+    animation-iteration-count: 5;
     animation-direction: alternate;
+    animation-fill-mode: both;
 } 
 .planet2{
     position: absolute;
-    max-width: 30%;
+    max-width: 50%;
     right: 50px;
+    top: 70px;
     animation-name: moveleft;
     animation-duration: 10s;
     animation-timing-function: ease;
-    animation-iteration-count: unset;
+    animation-iteration-count: 5;
     animation-direction: alternate;
+    animation-fill-mode: both;
 }
 
 @keyframes moveright{
